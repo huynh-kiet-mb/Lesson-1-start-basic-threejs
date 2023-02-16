@@ -38,4 +38,31 @@
     => Cú pháp chuẩn để khai báo camera: 
     * const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-# 
+# Renderer
+- Nói nôm na nó output khi input là camera và scene thì chúng ta cần cái gì đó để đưa ra thành canvas và lúc đó renderer sẽ làm điều đó.
+- Cú pháp khai báo renderer cơ bản 
+  renderer.setSize(window.innerWidth, window.innerHeight);
+- Đưa renderer vào trong docments: 
+  document.body.appendChild(renderer.domElement);
+
+# Tổng kết đơn giản qua ví dụ
+=> Hiểu đơn giản như này: camera của điện thoại chính là camera, bạn chụp ảnh thì chỉ có thể chụp được trong tầm nhìn của camera (xa thì bị mờ), vì vậy camera chính là thứ quyết định bạn có thể xem được cảnh - scence gì. Lúc này điện thoại đóng vai trò là renderer lấy ra các cảnh - scene được camera ghi lại và chiếu lên màn hình điện thoại - canvas cho chúng ta nhìn.
+
+# Mesh 1
+- chúng ta đã có tất cả những thành phần cần thiết để dựng ảnh và nền nhưng chúng ta thiếu VẬT
+- Mesh chính là vật(object) trong vc này: vật 3D
+- Mesh thường mô tả như lưới(các điểm nối với nhau thành dạng lưới) để tạo thành các khổi hình.
+- Lưới càng dày thì độ chính xác của hình ảnh càng cao và rõ ràng.
+- Chúng ta sẽ đi sâu hơn vào Mesh vì đây là thành phần tạo ra vật thể 3D.
+# Mesh 2
+- Một đối tượng Mesh là vỏ chứa hình GEOMETRY và chất liệu MATERIAL trong không gian 3 chiều.
+
+    # GEOMETRY
+    - Khổi hình học để xây dựng nên vật thể 3D
+    - Link lấy data: https://threejs.org/docs/index.html?q=geometry#api/en/geometries/SphereGeometry
+
+    # MATERIAL
+    - Vật liệu cho khối hình ví dụ như metal, chrome, titan, skin,...
+    - Link data: https://threejs.org/docs/index.html?q=mater#api/en/constants/Materials
+
+=> Link tham khảo có ở trên.
