@@ -15,6 +15,14 @@
 - Là thư viện JS dùng WebGL để vẽ 3D
 - ThreeJS giúp chúng ta tạo nên các hình ảnh 3D trên brower chỉ bằng JS mà không cần phải tại platform, application nào để người dùng có thể trải nghiệm hình ảnh 3D.
 => Link tham khảo về ThreeJS: https://viblo.asia/p/threejs-bai-1-lam-quen-voi-moi-truong-3d-cua-threejs-vyDZO7ROZwj#_webgl-la-gi-3
+
+# VITEJS
+- Chúng ta sẽ sử dụng viteJS để thực hiện tạo và chạy ThreeJS cho đơn giản
+- Command line cài đặt 
+    * npm init @vitejs/app hoặc npm init vite
+    * npm install three
+=> Và chúng ta có thể thực hiện cài đặt và tạo ThreeJS canvas trong project.
+
 ----------------------------------------------------------------
 
                         THREE JS 
